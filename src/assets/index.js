@@ -20,6 +20,12 @@ import redux from "./tech/redux.png"
 import tailwind from "./tech/tailwind.png"
 import typescript from "./tech/typescript.png"
 import threejs from "./tech/threejs.svg"
+import firebase from "./tech/firebase.svg"
+import bootstrap from "./tech/bootstrap.svg"
+import PostgreSQL from "./tech/PostgreSQL.svg"
+import MUI from "./tech/MUI.svg"
+import SANITY from "./tech/sanity.png"
+import express from "./tech/express.svg"
 
 import meta from "./company/meta.png"
 import shopify from "./company/shopify.png"
@@ -31,6 +37,12 @@ import jobit from "./jobit.png"
 import tripguide from "./tripguide.png"
 
 export {
+    PostgreSQL,
+    bootstrap,
+    firebase,
+    MUI,
+    SANITY,
+    express,
     logo,
     backend,
     creator,

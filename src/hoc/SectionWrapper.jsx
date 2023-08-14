@@ -4,7 +4,14 @@ import { styles } from "../styles"
 import { staggerContainer } from "../utils/motion"
 
 const SectionWrapper = (Component, idName) =>
-    function HOC() {
+    function HOC({ result, isLoading }) {
+        if (isLoading) {
+            return (
+                <div>
+                    <p className="text-white">Content is loading</p>
+                </div>
+            )
+        }
         return (
             <motion.section
                 variants={staggerContainer()}
@@ -16,7 +23,7 @@ const SectionWrapper = (Component, idName) =>
                 <span className="hash-span" id={idName}>
                     &nbsp;
                 </span>
-                <Component />
+                <Component result={result} />
             </motion.section>
         )
     }
